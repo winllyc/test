@@ -1124,7 +1124,7 @@
     GameConfig.sceneRoot = "";
     GameConfig.debug = false;
     GameConfig.stat = false;
-    GameConfig.physicsDebug = true;
+    GameConfig.physicsDebug = false;
     GameConfig.exportSceneToJson = true;
     GameConfig.init();
 
