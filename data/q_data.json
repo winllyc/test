@@ -1,0 +1,33 @@
+[
+    {
+        "题目索引": 1,
+        "题目类型": "拖动题",
+        "题目标签": "记忆题icon.png",
+        "倒计时间": 20,
+        "解析": "1解析",
+        "音频题_视频题_图片题": "questionvideo.mp4,自动播放",
+        "空白块数目": 12,
+        "资源图片名称": "right1.png,right2.png,right3.png,right4.png,right5.png,right6.png,right7.png,right8.png,wrong1.png,wrong2.png,wrong3.png,unsure.png"
+    },
+    {
+        "题目索引": 2,
+        "题目类型": "多选题",
+        "题目标签": "多选题icon.png",
+        "倒计时间": 22,
+        "解析": "2解析",
+        "音频题_视频题_图片题": "questionsound.mp3",
+        "题目主图": "question.png",
+        "资源图片名称": "right1.png,right2.png,right3.png,wrong1.png,wrong2.png,wrong3.png,unsure.png"
+    },
+    {
+        "题目索引": 3,
+        "题目类型": "单选题",
+        "答案": "B",
+        "题目标签": "单选题icon.png",
+        "倒计时间": 120,
+        "解析": "3解析",
+        "音频题_视频题_图片题": "questionsound.mp3",
+        "题目主图": "question.png",
+        "资源图片名称": "right.png,wrong1.png,wrong2.png,wrong3.png,wrong4.png,unsure.png"
+    }
+]
