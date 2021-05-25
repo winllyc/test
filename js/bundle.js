@@ -304,6 +304,7 @@
            this.btn_next.pivotX = this.btn_next.width / 2;
            this.btn_next.pos(Laya.stage.width / 2, Laya.stage.height - this.btn_next.height * 5);
            this.btn_next.labelColors = "#FFFFFF";
+           this.btn_next.disabled = true;
            this.addChild(this.btn_next);
            this.btn_next.on(Event$1.CLICK, this, this.btnNextClickHandler);
            var arr_media = Bridge.arr_q_data[Bridge.curr_q_num]["音频题_视频题_图片题"].split(",");
@@ -597,6 +598,7 @@
                    arr_single_index[i].y = arr_single_index[i - 1].y + arr_single_index[i - 1].height + this.widget_updown_gap;
                }
            }
+           this.btn_next.disabled = false;
        }
        onAssetLoadError(err) {
            console.log("CheckQuestion:", "加载资源图片失败: " + err);
@@ -890,6 +892,7 @@
            }
            this.reading_panel ? this.setChildIndex(this.reading_panel, this.numChildren - 1) : 0;
            Laya.stage.on(Event$4.MOUSE_OUT, this, this.dragOutStageHandler);
+           this.btn_next.disabled = false;
        }
        onAssetLoadError(err) {
            console.log("DragQuestion:", "加载资源图片失败: " + err);
@@ -1023,6 +1026,7 @@
                    arr_single_index[i].y = arr_single_index[i - 1].y + arr_single_index[i - 1].height + this.widget_updown_gap;
                }
            }
+           this.btn_next.disabled = false;
        }
        onAssetLoadError(err) {
            console.log("CheckQuestion:", "加载资源图片失败: " + err);
@@ -2000,7 +2004,7 @@
    GameConfig.startScene = "MainScene.scene";
    GameConfig.sceneRoot = "";
    GameConfig.debug = false;
-   GameConfig.stat = true;
+   GameConfig.stat = false;
    GameConfig.physicsDebug = false;
    GameConfig.exportSceneToJson = true;
    GameConfig.init();
